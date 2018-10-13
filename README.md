@@ -9,19 +9,30 @@ I intend to eventually package this an .exe, and provide an installable .msi fil
 but I am currently troubleshooting that. This hardly counts, as it is just a bit 
 of python code, but I hope that this project will run easily on other machines. Going to 
 test it on my laptop as soon as I get it uploaded.
+
+Update (12 oct 2018): Tested the zip file on my laptop. The code was meant to find your the directory 
+where you saved the 'Interval Trainer' Folder, but it acutally just finds you working directory,
+so you need to set the working directory to the 'Interval Trainer' folder.
 ---------------------------------------------------------------------------------
 
 Installing:
 
 1) To run this you just need to extract the contents of the zip file "Interval Trainer.zip" to a folder
 2) Then open 'Interval_trainer_v1_1.py' in a python IDE, with QT as the backend.
-	2a) You may need to specify matplotlib.use('Qt5Agg') on your IDE but on mine I specify
- 		it internally in setting
+	2a) You may need to specify matplotlib.use('TkAgg') on your IDE but on mine I specify
+ 		it internally in settings.
 3) Run the Cell as usual in your IDE
 4) Depending on your IDE, system, and version of python, you will need to install some packages
     -pygame
     -tkinter
+5) Update (12 oct 2018): You do need to specify the working directory to the "your__directory\Interval Trainer"  
+       and then this will work on other windows machines. 
     
+Is it plotting correctly: If you set follow the instructions it will work on systems with the same
+       python version installed. If you want to make sure that you have the correct backend, there is
+       a sample of the output of the progam in the "Example Plot" folder. Note, however, that it 
+       should output an interactive TK window plot, with working buttons. Inline plotting backends
+       will only gerneate a static image of the first note.
 
 Errors: The current version of the code does not generate any error on my machine,
          please contact me with errors @ bcubrich@gmail.com
