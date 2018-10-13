@@ -30,7 +30,7 @@ _8va_cleff=False         #If True show the notes on a normal grand staff, instea
 _8va=False              #IF true play whatever note is started on an actoave higher
 _8vb=False
 c_low=False
-treble=True
+treble=False
 #import time
 
 #import matplotlib
